@@ -1,0 +1,71 @@
+
+    body{
+        overflow: hidden;
+      
+        background-color: #e7d77c;
+    }
+.all{
+    border: 1px solid #261f06;
+    height: 70%;
+    width: auto;
+    background-color: #261f06;
+    color: #f0c5e7;
+    margin-top: -10px;
+}
+.mainparagraph{
+    color: #d6c3d8;
+    margin-left: 55%;
+    padding-top: 1%;
+}
+.left{
+    border: 1px solid #261f06;
+    height: 50px;
+    width: 70%;
+    background-color: #261f06;
+    margin-top: -60px;
+    transform: rotate(4deg);
+}
+.right{
+    border: 1px solid #261f06;
+    height: 50px;
+    width: 31%;
+    background-color: #261f06;
+    margin-top: -51px;
+    transform: rotate(-9deg);
+    float: right;
+}
+.shape{
+      border: 1px solid #261f06;
+    height: 50px;
+    width: auto;
+    background-color: #261f06;
+    margin-top: -22px;
+}
+.play{
+    margin-left: 58%;
+    margin-top: 3%;
+    background-color: #261f06;
+   
+    margin-right:20%;
+    height: 50px;
+    width: 20%;
+}
+.board{
+    margin-left: 30%;
+    border: 3px solid #383203;
+    height: 700%;
+    /* font-size: 20px; */
+    width: 35%;
+    background-color: #f0e4ec;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.main-text{
+    text-align: center;
+    height: 40px;
+    margin-top: auto;
+    border: 1px solid #290e02;
+    background-color: #261f06;
+    color: #e5e6cd;
+    padding-top: 10px;
+}

@@ -54,26 +54,29 @@ let red = document.getElementById("red").addEventListener("click", correct)
 
 function display(e) {
     let len = document.getElementById("type").value.length;
+    // let  
 
 
     if (e.charCode == 32) {
         //alert(len);
         for (let i = 0; i < len; i++) {
-
             let index0 = document.getElementById("type").value.charAt(i);
             // console.log(index0);
             let theOther = (diffWords[presentWord]).charAt(i);
 
             console.log(theOther);
             if (index0 == theOther) {
-                //console.log("i did");
+                // console.log("i did");
                 document.getElementById("type").style.color = "green";
             } else {
-                //console.log("itsnot");
+                // console.log("itsnot");
                 document.getElementById("type").style.color = "red";
             }
-            e.preventDefault
+            e.preventDefault();     
         }
     }
+    
 }
-let typed = document.getElementById("type").addEventListener("keypress", display)
+
+let typed = document.getElementById("type").addEventListener("keypress", display());
+

@@ -60,17 +60,17 @@ function display(e) {
         //alert(len);
         for (let i = 0; i < len; i++) {
             let index0 = typedWord.value.charAt(i);
-            // console.log(index0);
+            console.log(index0);
             let theOther = (diffWords[presentWord]).charAt(i);
             console.log(theOther);
-            if (index0 == theOther) {
+            if (index0 === theOther) {
                 //console.log("i did");
                 typedWord.style.color = "green";
             } else {
                 //console.log("itsnot");
                 typedWord.style.color = "red";
             }
-            e.preventDefault();
+         
         }
     }
 }

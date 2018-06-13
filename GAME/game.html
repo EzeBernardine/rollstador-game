@@ -12,9 +12,9 @@
 <body>
     <header class="main">
         <div class="all">
-            <h1 class="mainparagraph">
+            <p class="mainparagraph">
                 ROLLSTADOR
-            </h1>
+            </p>
         </div>
         <div class="shape">
             <div class="play"></div>
@@ -24,21 +24,24 @@
                 <div class="text">
                     <h2 class="main-text">ITs GAME TIME</h2>
                 </div>
-                <p id="question" style="margin-left: 70px; font-size: 15px; color: #2b3a03;"></p>
+                <!-- the instruction -->
+                <p id="question" style="text-align: center; font-size: 15px; color: #2b3a03;"></p>
 
+                <!-- area for the questions -->
                 <div id="words" style="border: 1px solid #041616; height: 25%; width: 85%; margin: auto; background-color: #644b05; color: white; text-align: center; padding-top: 5%;"></div>
 
-
+                <!-- the error message paragraph -->
                 <p id="error" style="text-align: center;"></p>
-                <div class="flex" style="margin: 5% 10% 5% 10% ; display: flex; ">
-                    
-                    <button id="green" type="submit" value="play" style="background-color: greenyellow; height: 30px; width: 50%">Play</button>
+               
 
-                    <input id="type" type="text" style="width: 80%; height: 30px; ">
+                <!-- the start button -->
+                <button id="green" type="submit" value="play" style="background-color: greenyellow; height: 30px;margin: 0% 0 1% 2% ; width: 50px">Play</button>
+
+                <!-- the typing area -->
+                <input id="type" type="text" style="width: 60%; height: 30px; ">
                     
-                    
-                    <button id="red" value="submit" style="background-color: #ff2f2f; height: 30px;width: 50%; color: white;">Submit</button>
-                </div>
+                <!-- the submit button -->
+                <button id="red" value="submit" style="background-color: #ff2f2f; height: 30px;width: 70px; color: white; margin: 0% 0 5% 0% ;font-size: 100%;">Submit</button>
             </div>
         </div>
     </header>

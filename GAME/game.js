@@ -6,6 +6,9 @@ let diffWords = [
 ]
 
 
+
+
+
 let reversedWords = [
     " is Nigeria the giant  Africa of",
     "learnfactory an am  intern at  Nigeria i",
@@ -13,8 +16,8 @@ let reversedWords = [
     "trust  your on Build God"
 ]
 
-let presentWord = Math.round(Math.random() * 3);
 
+let presentWord = Math.round(Math.random() * 3);
 function shuffle(e) {
     presentWord = Math.round(Math.random() * 3);
     while (e.target.innerHTML.indexOf(reversedWords[presentWord]) != -1) {
@@ -22,13 +25,10 @@ function shuffle(e) {
         //alert(presentWord);
     }
     let theQuestion = document.getElementById("question").innerHTML = ("re-arrange the words in correct order");
-
     let theWord = reversedWords[presentWord];
     let theDiv = document.getElementById("words").innerHTML = (theWord);
     e.preventDefault();
 }
-
-
 let green = document.getElementById("green").addEventListener("click", shuffle)
 
 function correct(e) {
@@ -47,36 +47,31 @@ function correct(e) {
         document.getElementById("error").style.color = "red";
     }
 }
-
 let red = document.getElementById("red").addEventListener("click", correct)
 //let lenght=document.getElementById("type").value.lenght;
 //alert(length);
 
+
+
 function display(e) {
     let len = document.getElementById("type").value.length;
-    // let  
-
-
     if (e.charCode == 32) {
         //alert(len);
         for (let i = 0; i < len; i++) {
             let index0 = document.getElementById("type").value.charAt(i);
             // console.log(index0);
             let theOther = (diffWords[presentWord]).charAt(i);
-
             console.log(theOther);
             if (index0 == theOther) {
-                // console.log("i did");
+                //console.log("i did");
                 document.getElementById("type").style.color = "green";
             } else {
-                // console.log("itsnot");
+                //console.log("itsnot");
                 document.getElementById("type").style.color = "red";
             }
-            e.preventDefault();     
+            e.preventDefault
         }
     }
-    
 }
 
-let typed = document.getElementById("type").addEventListener("keypress", display());
-
+let typed = document.getElementById("type").addEventListener("keypress", display)

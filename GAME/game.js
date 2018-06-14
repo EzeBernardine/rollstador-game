@@ -22,11 +22,11 @@ function shuffle(e) {
     presentWord = Math.round(Math.random() * 3);
     while (e.target.innerHTML.indexOf(reversedWords[presentWord]) != -1) {
         Math.round(Math.random() * 3);
-        //alert(presentWord);
     }
     let theQuestion = document.getElementById("question").innerHTML = ("re-arrange the words in correct order");
     let theWord = reversedWords[presentWord];
     let theDiv = document.getElementById("words").innerHTML = (theWord);
+     document.getElementById("words").style.fontSize="15px"
     e.preventDefault();
 }
 let green =document.getElementById("green").addEventListener("click", shuffle)
@@ -36,7 +36,7 @@ let typedWord= document.getElementById("type");
 let errorMessage=document.getElementById("error")
 
 
-function correct(e) {
+function submit(e) {
     let theOther = diffWords[presentWord]
     let type = typedWord.value;
     if (type === theOther) {
@@ -49,7 +49,7 @@ function correct(e) {
         errorMessage.style.color = "red";
     }
 }
-let red = document.getElementById("red").addEventListener("click", correct)
+let red = document.getElementById("red").addEventListener("click", submit)
 
 
 
@@ -70,9 +70,9 @@ function display(e) {
                 //console.log("itsnot");
                 typedWord.style.color = "red";
             }
-         
         }
     }
 }
 
 let typed = typedWord.addEventListener("keypress", display)
+

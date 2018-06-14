@@ -56,13 +56,13 @@
     width: 20%;
 }
 .board{
-    margin-left: 30%;
+    margin-left: 10%;
     border: 3px solid #383203;
     height: 700%;
     /* font-size: 20px; */
     width: 35%;
     background-color: #f0e4ec;
-    margin-top: 10%;
+    margin-top: -27%;
     overflow: hidden;
 }
 .main-text{
@@ -74,4 +74,51 @@
     color: #e5e6cd;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.drop1{
+    border: 1px solid #261f06;
+    height: 130px;
+    width: 30%;
+    margin-left: 40.5%;
+    background-color: #261f06;
+    margin-top: -38px;
+    transform: rotate(25deg);
+}
+.drop2{
+    border: 1px solid #261f06;
+    height: 130px;
+    width: 30%;
+    margin-left: 62.5%;
+    background-color: #261f06;
+    margin-top: -144px;
+    transform: rotate(-30deg);
+}
+.score{
+     border: 1px solid #261f06;
+    height: 600%;
+    width: 20%;
+    margin-left: 57%;
+    background-color: #261f06;
+    margin-top: 5.5%;
+  
+}
+.scoreFigures{
+  border: 1px solid #261f06;
+    height: 200%;
+    width: 10%;
+    margin-left: 62%;
+    background-color: #080701;
+    margin-top: -5.5%;
+    position: relative;
+    display: flex;
+}
+.win{
+    border: 1px solid #999c7e;
+    height: 100%;
+    width: 50%;
+}
+.fail{
+    border: 1px solid #96a321;
+    height: 100%;
+    width: 50%;
 }

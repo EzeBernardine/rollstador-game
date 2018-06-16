@@ -88,21 +88,30 @@
 }
 .drop1{
     border: 1px solid #261f06;
-    height: 130px;
+    height: 230%;
     width: 30%;
     margin-left: 40.5%;
     background-color: #261f06;
-    margin-top: -38px;
+    margin-top: -3%;
     transform: rotate(25deg);
 }
 .drop2{
     border: 1px solid #261f06;
-    height: 130px;
+    height: 230%;
     width: 30%;
     margin-left: 62.5%;
     background-color: #261f06;
-    margin-top: -144px;
+    margin-top: -8.5%;
     transform: rotate(-30deg);
+}
+.red{
+    background-color: #eb0808;
+     height: 40px;
+     width: 70px; 
+     color: white; 
+     margin: 0% 0 1% 15% ;
+     font-size: 100%;
+
 }
 .score{
      border: 1px solid #261f06;
@@ -125,7 +134,7 @@
     text-align: center;
     padding-top: 2%;
     position: relative;
-    font-size: 60px;
+    font-size: 360%;
 }
 .restart{
     background-color: #dce70b;

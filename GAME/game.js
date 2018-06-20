@@ -70,8 +70,8 @@ function play(e) {
     doYou.className = "doyou"
     messageDisplayArea.appendChild(doYou);
     doYou.style.marginTop="25%";
-    // doYou.style.marginLeft="30%"; 
-    doYou.innerHTML = `DO YOU KNOW <br/> ...loading...`; 
+    doYou.style.marginLeft="10%"; 
+    doYou.innerHTML = `INFO <br/> ...loading...`; 
     doYou.style.color="yellow";
 
     //the info message paragraph
@@ -127,6 +127,7 @@ function play(e) {
             doYou.innerHTML = "DO YOU KNOW";
             // alert("hi")
             doYou.className="DOYOU";
+            document.getElementsByClassName("goodMessage")[0].style.color="green";
             aboutUs()
 
         } else {
@@ -175,4 +176,4 @@ function display(e) {
     }
 }
 let typedWord = document.getElementById("type");
-let typed = typedWord.addEventListener("keypress", display)
+let typed = typedWord.addEventListener("keypress", display);

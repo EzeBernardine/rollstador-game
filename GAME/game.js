@@ -7,14 +7,14 @@ let diffWords = [
 
 let infoMessage = [
     "Learnfactory internship started on 31st of April",
-    "The Rolls Royes is made up of four members: Bernrdine, Grace, Emmanuel and ",
-    "Goerge is a guy, Grace a lady, Shalom the last born, Emmanuel a guy and a leader",
+    "The Rolls Royes is made up of four members: Bernrdine, Grace, Emmanuel and Chibuike",
+    "Goerge is a guy and a leader. Grace a lady, Shalom the last born, Emmanuel a guy and a leader too",
     "Emmanuel is the leader of this group",
     "Our chiefcodes smith is Sir IC",
-    "We have verually four teachers",
+    "We have vertually four teachers",
     "There are four departments here in Learnfactory",
     "Bernardine is a lady, Zoe a lady, and Chilaka a guy",
-    "Prince is a handaome guy, and Izekiel: the tallest guy"
+    "Prince is a handaome guy, and Izekiel; the tallest guy"
 ]
 
 
@@ -28,8 +28,8 @@ let reversedWords = [
 ]
 
 
-let randomNumber = Math.round(Math.random() * 3);
 //function that displays the questions
+let randomNumber = Math.round(Math.random() * 3);
 function displayedWords() {
     randomNumber = Math.round(Math.random() * 3);
     let theWord = reversedWords[randomNumber];
@@ -42,7 +42,6 @@ function displayedWords() {
 
 //function housing the display of the info messages
 let messageDisplayArea = document.getElementById("score")
-
 function aboutUs() {
     randomNumber2 = Math.round(Math.random() * 10);
     let theWord2 = infoMessage[randomNumber2];
@@ -55,14 +54,18 @@ function aboutUs() {
 }
 
 
-
+//function guiding the play button
 let Drop1 = document.getElementById("drop1");
 let Words = document.getElementById("words")
-
 function play(e) {
     displayedWords()
+    //the question message
     let theQuestion = document.getElementById("question").innerHTML = ("re-arrange the words in correct order");
-    document.getElementById("words").style.fontSize = "15px"
+
+    //styling the question its self
+    document.getElementById("words").style.fontSize = "15px";
+
+    //assigning class to the result
     document.getElementById("scoreFigures").className = "scoreFigures";
 
     //adding the do you know paragraph
@@ -89,14 +92,15 @@ function play(e) {
     Restart.appendChild(text)
     Restart.className = "restart";
     document.getElementById("score").appendChild(Restart)
-    // removing the red button tag
+    // removing the play button tag
     let bnt = e.target;
     bnt.parentElement.removeChild(bnt)
-    // console.log(bnt)
+    // the reset button
     function reset(e) {
         location.reload();
     }
     Restart.addEventListener("click", reset);
+    //creating the red button
     let redButton = document.createElement("button");
     let buttonText = document.createTextNode("submit")
     redButton.appendChild(buttonText)
@@ -118,6 +122,7 @@ function play(e) {
             typedWord.style.color = "green";
             errorMessage.innerHTML = ("Weldone");
             errorMessage.style.color = "green";
+            //increment in the scores
             let winningScore = document.getElementById("scoreFigures");
             increment++;
             winningScore.innerHTML = increment;
@@ -131,10 +136,11 @@ function play(e) {
             aboutUs()
 
         } else {
-            //  alert("failed")
+            
             typedWord.style.color = "red";
             errorMessage.innerHTML = ("error!!! Pls try again");
             errorMessage.style.color = "red";
+            //reduction in the scores
             let failingScore = document.getElementById("scoreFigures");
             increment--;
             failingScore.innerHTML = increment;
@@ -144,8 +150,6 @@ function play(e) {
             doYou.className="DOYOU";
             document.getElementsByClassName("goodMessage")[0].innerHTML = "oops!!!           give the correct answer first";
             document.getElementsByClassName("goodMessage")[0].style.color="red"
-
-
         }
     }
     let red = document.getElementsByClassName("red")[0].addEventListener("click", submit)
@@ -159,14 +163,14 @@ function display(e) {
     let correctWord = diffWords[randomNumber]
     let len = typedWord.value.length;
     if (e.charCode === 32) {
-        //alert(len);
+        // alert(len);
         for (let i = 0; i < len; i++) {
             let index0 = typedWord.value.charAt(i);
             // console.log(index0);
             correctWord = (diffWords[randomNumber]).charAt(i);
             // console.log(correctWord);
             if (index0 === correctWord) {
-                //console.log("i did");
+                //console.log("io did");
                 typedWord.style.color = "green";
             } else {
                 //console.log("itsnot");
@@ -174,6 +178,6 @@ function display(e) {
             }
         }
     }
-}
+    }
 let typedWord = document.getElementById("type");
 let typed = typedWord.addEventListener("keypress", display);

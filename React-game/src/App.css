@@ -1,0 +1,147 @@
+
+.Haeder{
+  border: 1px solid #332211;
+  background-color: #332211;
+  text-align: center;
+  color: #e0bea4;
+  height:  30%;
+  font-size: 150%;
+}
+.left{
+  border: 1px solid #332211;
+  height: 50px;
+  width: 70%;
+  background-color: #332211;
+  margin-top: 0%;
+  transform: rotate(4deg);
+}
+.right{
+  border: 1px solid #332211;
+  height: 50px;
+  width: 31%;
+  background-color: #332211;
+  margin-top: -51px;
+  transform: rotate(-9deg);
+  float: right;
+}
+.middle{
+  border: 1px solid #332211;
+  height: 50px;
+  width: 50%;
+  background-color: #332211;
+  margin-top: -4%;
+  margin-left: 35%;
+}
+.second-left{
+  border: 1px solid #332211;
+  height: 80px;
+  width: 20%;
+  margin-left: 44.5%;
+  background-color: #332211;
+  margin-top: -1%;
+  transform: skew(5deg,27deg);
+}
+.second-right{
+  border: 1px solid #332211;
+  height: 80px;
+  width: 32%;
+  margin-left: 64.5%;
+  background-color: #332211;
+  margin-top: -7.5%;
+  transform: skew(5deg,-21deg);
+}
+.cover{
+  border: 1px solid #332211;
+  height: 80px;
+  width: 20%;
+  margin-left: 55.5%;
+  background-color: #332211;
+  margin-top: -4.5%;
+}
+.figures{
+  border: 1px solid #261f06;
+  height: 120px;
+  width: 9%;
+  margin-left: 61%;
+  background-color: #080701;
+  margin-top: -1.5%;
+  border-radius: 100%;
+  color: #dfc4a1;
+  text-align: center;
+  padding-top: 2%;
+  position: relative;
+  font-size: 360%;  
+}
+.info-area{
+  border: 1px solid #332211;
+  height: 300px;
+  width: 20%;
+  margin-left: 55%;
+  background-color: #332211;
+  margin-top: -3.5%;
+}
+body{
+  background-color: #5a473a
+}
+.Board{
+  border: 3px solid #1f1001;
+  height: 350px;
+  width: 500px;
+  margin-top: 8%;
+  margin-left: 30%;
+}
+.Board1{
+  text-align: center;
+  background-color: #180d01;
+  color: white;
+  height: 60px;
+  margin: auto;
+  padding-top: 30px; 
+}
+.BoardSecondPosition{
+  border: 3px solid #1f1001;
+  height: 350px;
+  width: 500px;
+  margin-top: -27%;
+  margin-left: 10%;
+}
+.SaerchBox{
+  margin-top: 0%;
+  margin-left: 5%;
+  height: 70px;
+  width: 450px; 
+  background-color: #4f2509 ;
+  color: #dbccc1;
+  text-align: center;
+  padding-top: 1%;  
+}
+.digAndPlay{
+  margin-top: -20px;
+  font-size: 12px;
+  color: #0a0602
+}
+.Red{
+  background-color: red;
+  color: white;
+  border: none;
+  margin: 2% 0 0 10%;
+  height: 30px;
+  width: 60px;
+}
+.Submit{
+   background-color: #28b90b;
+  color: #010a01;
+  border: none;
+  margin: 2% 0 0 10%;
+  height: 30px;
+  width: 70px;
+}
+.Question{
+  color: #d4beb6;
+  margin-left: 20%;
+}
+.TypeArea{
+  margin: 5% 0 0 20%;
+  height: 30px;
+  width: 60%;
+}

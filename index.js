@@ -1,4 +1,4 @@
-let diffWords = [
+    let diffWords = [
     "Nigeria is the giant of Africa",
     "i am an intern at learnfactory Nigeria",
     "this is the best game you can ever play",
